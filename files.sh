@@ -18,6 +18,10 @@ read fileName
 if [ -f $fileName ]
 then
     echo "${fileName} exists"
+    echo "Enter text to append"
+    read textToAppend
+    echo "$textToAppend" >> $fileName
+    # > would overwrite the file content
 else    
     echo "${fileName} does not exist, it will be created"
     touch $fileName
