@@ -15,4 +15,4 @@ vars
 echo $abc
 
 greeting "Evgueni"
-
+greeting "Bob"
